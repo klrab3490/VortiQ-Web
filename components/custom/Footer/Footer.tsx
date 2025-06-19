@@ -61,10 +61,15 @@ export default function Footer() {
       </div>
       
       <div className="footer-bottom border-t border-gray-700 text-center py-3">
-        <p>&copy; Your Site Name, All Right Reserved.</p>
+        <p>&copy; VortiQ Web, All Right Reserved.</p>
         <p>
-          Designed By <a href="#" className="hover:text-blue-400">HTML Codex</a>,
-          Distributed By <a href="#" className="hover:text-blue-400">ThemeWagon</a>
+          Designed By <span>
+            <a href="https://rahulab.vercel.app/" className="hover:text-blue-400">Rahul A B</a>,
+            <a href="https://github.com/edwincshony" className="hover:text-blue-400">Edwin C Shony</a>,
+            <a href="https://github.com/gk732" className="hover:text-blue-400">Gopikrishna K M</a>, &
+            <a href="https://github.com/SreeragSreekanth" className="hover:text-blue-400">Sreerag Sreekanth</a>
+          </span>,
+          Distributed By <a href="https://vercel.com/home" className="hover:text-blue-400">Vercel</a>
         </p>
       </div>
     </footer>
