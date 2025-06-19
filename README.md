@@ -1,36 +1,192 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VortiQ -Web 🌐
 
-## Getting Started
+A modern frontend web application built with TypeScript, React, Tailwind CSS and Vite.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Table of Contents
+
+* [About](#about)
+* [Demo](#demo)
+* [Features](#features)
+* [Tech Stack](#tech-stack)
+* [Project Structure](#project-structure)
+* [Setup & Development](#setup--development)
+* [Testing](#testing)
+* [Build & Deployment](#build--deployment)
+* [Contributing](#contributing)
+* [Authors](#authors)
+* [License](#license)
+
+---
+
+## 💡 About
+
+VortiQ -Web is the web frontend for the VortiQ platform—focused on delivering an intuitive and responsive user experience.
+
+---
+
+## 🎮 Demo
+
+*(Include a deployed live URL or embed screenshots/gif)*
+
+---
+
+## ✅ Features
+
+* User-friendly UI built with React and Tailwind CSS
+* Responsive layouts for mobile and desktop
+* Component-driven design for reusability
+* Optimized build with Vite
+
+---
+
+## 🧰 Tech Stack
+
+| Category             | Technologies            |
+| -------------------- | ----------------------- |
+| **Frontend**         | React, TypeScript, Vite |
+| **Styling**          | Tailwind CSS            |
+| **Linting & Format** | ESLint, Prettier        |
+| **Version Control**  | Git & GitHub            |
+
+---
+
+## 🗂 Project Structure
+
+```
+vortiq-web/
+├── actions/            # Server Side Functions
+├── app/
+│   ├── (auth)/         
+│   │   ├── login         
+│   │   └── layout.tsx             
+│   ├── contact         
+│   ├── dashboard/
+|   │   ├── admin/
+|   |   │   ├── users/
+|   |   |   │   ├── add/
+|   |   |   │   │   └── page.tsx             
+|   |   |   │   ├── edit/
+|   |   |   │   │   └── page.tsx             
+|   |   │   │   └── page.tsx             
+|   │   ├── devices/
+|   |   │   ├── [id]/
+|   |   │   │   └── page.tsx             
+|   │   │   └── page.tsx             
+|   │   ├── settings/
+|   │   │   └── page.tsx             
+|   │   ├── user/
+|   |   │   ├── analytics/
+|   |   |   │   ├── [id]
+|   |   │   │   └── page.tsx             
+|   │   │   └── page.tsx             
+|   │   ├── layout.tsx
+│   │   └── page.tsx             
+│   ├── FAQ         
+│   │   └── page.tsx             
+│   ├── team         
+|   │   ├── images
+│   │   └── page.tsx             
+│   ├── layout.tsx         
+│   └── page.tsx             
+├── components/         # Reusable components
+│   ├── custom/         # Custom Elements
+│   ├── theme/          # Next Theme
+│   └── ui/             # Shad CN Components
+├── firebase/           # Firebase
+├── lib/                
+├── public/             # Static assets
+├── schemas/            # Schemas
+├── postcss.config.mjs
+└── tsconfig.json      
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Setup & Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repo**
 
-## Learn More
+   ```bash
+   git clone https://github.com/klrab3490/VortiQ-Web.git
+   cd VortiQ-Web
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Start the dev server**
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Visit `http://localhost:5173` in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📦 Build & Deployment
+
+* **Build for production**
+
+  ```bash
+  npm run build
+  # or
+  yarn build
+  ```
+
+* **Preview production build**
+
+  ```bash
+  npm run preview
+  # or
+  yarn preview
+  ```
+
+Deployment platforms: Vercel, Netlify, or GitHub Pages.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a branch (`git checkout -b feat/YourFeature`)
+3. Commit your changes (`git commit -m "feat: add new feature"`)
+4. Push (`git push origin feat/YourFeature`)
+5. Open a pull request
+
+Please follow the existing code style and include any relevant tests.
+
+---
+
+## 🤖 Authors
+
+* **Edwin C Shony** ([klrab3490](https://github.com/edwincshony))
+* **Gopikrishna K M** ([klrab3490](https://github.com/gk732))
+* **Rahul A B** ([klrab3490](https://github.com/klrab3490))
+* **Sreerag Sreekanth** ([klrab3490](https://github.com/SreeragSreekanth))
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+---
+
+## 📬 Contact
+
+Have questions or suggestions? Reach out!
+
+* GitHub: [@klrab3490](https://github.com/klrab3490)
+* Portfolio: [rahulab.vercel.app](https://rahulab.vercel.app)
